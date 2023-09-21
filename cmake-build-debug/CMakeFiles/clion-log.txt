@@ -1,0 +1,53 @@
+/opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Users/matei/Desktop/projects/15466/15-466-f23-base1/build.sh -G "CodeBlocks - Unix Makefiles" -S /Users/matei/Desktop/projects/15466/15-466-f23-base3 -B /Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug
+CMake Deprecation Warning:
+  Support for "Extra Generators" like
+
+    CodeBlocks
+
+  is deprecated and will be removed from a future version of CMake.  IDEs may
+  use the cmake-file-api(7) to view CMake-generated project build trees.
+
+
+-- The C compiler identification is AppleClang 14.0.3.14030022
+-- The CXX compiler identification is AppleClang 14.0.3.14030022
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - failed
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc
+-- Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc - broken
+CMake Error at /opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeTestCCompiler.cmake:67 (message):
+  The C compiler
+
+    "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: '/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vna2l5'
+    
+    Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E env VERBOSE=1 /Users/matei/Desktop/projects/15466/15-466-f23-base1/build.sh -f Makefile cmTC_f22c6/fast
+    node:internal/modules/cjs/loader:1051
+      throw err;
+      ^
+    
+    Error: Cannot find module '/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vna2l5/Maekfile.js'
+        at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+        at Module._load (node:internal/modules/cjs/loader:901:27)
+        at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+        at node:internal/main/run_main_module:23:47 {
+      code: 'MODULE_NOT_FOUND',
+      requireStack: []
+    }
+    
+    Node.js v20.5.1
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!

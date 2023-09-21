@@ -1,0 +1,174 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineSystem.cmake:211 (message)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      The system is: Darwin - 21.2.0 - arm64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library not found for -lSystem
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.o"
+      
+      The C compiler identification is AppleClang, found in:
+        /Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/3.27.4/CompilerIdC/CMakeCCompilerId.o
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      1
+      ld: library not found for -lc++
+      clang: error: linker command failed with exit code 1 (use -v to see invocation)
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:2 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.o"
+      
+      The CXX compiler identification is AppleClang, found in:
+        /Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/3.27.4/CompilerIdCXX/CMakeCXXCompilerId.o
+      
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fMe8Ms"
+      binary: "/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fMe8Ms"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fMe8Ms'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E env VERBOSE=1 /Users/matei/Desktop/projects/15466/15-466-f23-base1/build.sh -f Makefile cmTC_9fff7/fast
+        node:internal/modules/cjs/loader:1051
+          throw err;
+          ^
+        
+        Error: Cannot find module '/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-fMe8Ms/Maekfile.js'
+            at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+            at Module._load (node:internal/modules/cjs/loader:901:27)
+            at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+            at node:internal/main/run_main_module:23:47 {
+          code: 'MODULE_NOT_FOUND',
+          requireStack: []
+        }
+        
+        Node.js v20.5.1
+        
+      exitCode: 1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/opt/homebrew/Cellar/cmake/3.27.4/share/cmake/Modules/CMakeTestCCompiler.cmake:56 (try_compile)"
+      - "CMakeLists.txt:2 (project)"
+    checks:
+      - "Check for working C compiler: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc"
+    directories:
+      source: "/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vna2l5"
+      binary: "/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vna2l5"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_OSX_ARCHITECTURES: ""
+      CMAKE_OSX_DEPLOYMENT_TARGET: "12.1"
+      CMAKE_OSX_SYSROOT: "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk"
+    buildResult:
+      variable: "CMAKE_C_COMPILER_WORKS"
+      cached: true
+      stdout: |
+        Change Dir: '/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vna2l5'
+        
+        Run Build Command(s): /opt/homebrew/Cellar/cmake/3.27.4/bin/cmake -E env VERBOSE=1 /Users/matei/Desktop/projects/15466/15-466-f23-base1/build.sh -f Makefile cmTC_f22c6/fast
+        node:internal/modules/cjs/loader:1051
+          throw err;
+          ^
+        
+        Error: Cannot find module '/Users/matei/Desktop/projects/15466/15-466-f23-base3/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-vna2l5/Maekfile.js'
+            at Module._resolveFilename (node:internal/modules/cjs/loader:1048:15)
+            at Module._load (node:internal/modules/cjs/loader:901:27)
+            at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:83:12)
+            at node:internal/main/run_main_module:23:47 {
+          code: 'MODULE_NOT_FOUND',
+          requireStack: []
+        }
+        
+        Node.js v20.5.1
+        
+      exitCode: 1
+...
