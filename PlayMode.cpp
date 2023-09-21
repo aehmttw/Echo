@@ -210,7 +210,7 @@ void ping(Scene& scene, bool save)
         pings++;
     }
 
-    for (int i = 0; i < asteroids.size(); i++)
+    for (unsigned int i = 0; i < asteroids.size(); i++)
     {
         asteroids[i]->time_until_ping = asteroids[i]->distance / 200.0f;
     }
@@ -486,7 +486,7 @@ void PlayMode::update(float elapsed)
     {
         ping_time -= elapsed;
 
-        for (int i = 0; i < asteroids.size(); i++)
+        for (unsigned int i = 0; i < asteroids.size(); i++)
         {
             if (asteroids[i]->time_until_ping > 0.0f)
             {
@@ -522,7 +522,7 @@ void PlayMode::update(float elapsed)
         float player_size = 50;
         for (Asteroid *a: asteroids)
         {
-            float dist = pow(a->pos.x - player_pos.x, 2) + pow(a->pos.y - player_pos.y, 2) + pow(a->pos.z - player_pos.z, 2);
+            float dist = (float) (pow(a->pos.x - player_pos.x, 2) + pow(a->pos.y - player_pos.y, 2) + pow(a->pos.z - player_pos.z, 2));
             //printf("dist: %f\n", dist);
             if (dist <= pow((player_size + a->size) / 2.0f, 2.0f))
             {
